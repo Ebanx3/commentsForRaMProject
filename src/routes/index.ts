@@ -23,6 +23,7 @@ characterRouter.post(
   "/:id/comments",
   Handler(async (req, res) => {
     const id = parseInt(req.params.id);
+    console.log(id);
     console.log(req.body);
     const newComment = await postComment(req.body);
     res.status(200).json({
