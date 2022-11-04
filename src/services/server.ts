@@ -11,8 +11,8 @@ app.use("/character", characterRouter);
 
 app.use((req, res) => {
   res.status(404).json({
-    msg: "Error",
-    data: "UndefinedPath",
+    msg: "UndefinedPath",
+    data: "Endpoints availables, '/character/:id/comments' get and post",
   });
 });
 
